@@ -1,5 +1,28 @@
 body
 {
-  background: url("/home/utilisateur/github/Simplon/CV/images/fond_site");
+  font-size: 20px;
+  text-align: center;
+  background: url('images/fond_site.jpg');
 
+
+}
+
+#coordonnees
+{
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+
+#bloc_page
+{
+  /*
+  display:flex;
+  justify-content: space-around;
+  */
+
+  text-align: left;
+  margin-left: 70px;
+  margin-top: 50px;
+  
 }
