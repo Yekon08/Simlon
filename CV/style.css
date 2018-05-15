@@ -37,3 +37,16 @@ h3
 {
   text-decoration: underline;
 }
+
+h3:hover
+{
+  color: blue;
+  font-size: 25px;
+  font-family: serif;
+}
+
+.photo:hover
+{
+  width: 800px;
+  height: 800px;
+}
