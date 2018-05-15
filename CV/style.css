@@ -36,7 +36,7 @@ body
 h3
 {
   text-decoration: underline;
-  max-width: 140px;
+  max-width: 400px;
 }
 
 h3:hover
@@ -48,6 +48,6 @@ h3:hover
 
 .photo:hover
 {
-  width: 200px;
-  height: 200px;
+  width: 75%;
+  height: 75%;
 }
