@@ -48,6 +48,6 @@ h3:hover
 
 .photo:hover
 {
-  width: 75%;
-  height: 75%;
+  width: 150px;
+  height: 150px;
 }
