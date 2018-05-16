@@ -54,13 +54,14 @@ h3:hover
 
 .bouton
 {
-    color:#0000ff;
+    color:black;
     font-size:24px;
     cursor:pointer;
 }
 .bouton:hover
 {
     text-decoration:underline;
+    color: blue;
 }
 .texte
 {
@@ -88,6 +89,8 @@ h3:hover
 {
   float: left;
   position: absolute;
-  top: 65px;
+  top: 70px;
   left: 35px;
+  height: 85px;
+  padding-top: 5px;
 }
