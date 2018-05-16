@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TEST JS </tilte>
 
+</head>
+
+<body>
+<h1>Test JS :</h1>
+<button type="button" onclick="toggle_text();">Test :</button>
+
+
+function toggle_text() {
+  var span = document.getElementById("span_txt");
+  if(span.innerHTML != "") {
+    span.innerHTML = "";
+  } else {
+    span.innerHTML = "Ton texte";
+  }
+}
+
+
+
+
+
+</body>
+</html>
