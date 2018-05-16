@@ -83,3 +83,11 @@ h3:hover
   top: 35px;
   left: 35px;
 }
+
+#texte
+{
+  float: left;
+  position: absolute;
+  top: 65px;
+  left: 35px;
+}
