@@ -2,7 +2,7 @@
 
 
 
-	$test = 'prenom' . ''$_POST['prenom']';
+	$test = 'prenom' . '$_POST['prenom']';
 
 	mail("maxime.jeannette@outlook.fr","formulaire",$test);
 
