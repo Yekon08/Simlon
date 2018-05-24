@@ -1,0 +1,63 @@
+body
+{
+	background-color: #CECEA5;
+r;
+
+
+
+}
+
+
+header
+{
+	width: 100%;
+	max-height: 200px;
+	font-size: 150px;
+
+}
+
+.img_header
+{
+	max-height: 200px;
+	width: 100%;
+}
+
+.titre_header
+{
+	background-image:url(images/background_header.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	color: red;
+}
+
+
+label
+{
+ display: block;
+ width: 150px;
+ float: left;
+ text-align: left;
+}
+
+form
+{
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1px;
+}
+
+
+
+
+p
+{
+	color: red;
+}
+
+#bouton
+{
+	float: right;
+}
+
