@@ -14,14 +14,14 @@ main
 
 #img_gauche
 {
-    width: 300px;
+    max-width: 300px;
     text-align: center;
     margin-right: 50px;
 }
 
 #img_droite
 {
-    width: 300px;
+    max-width: width: 300px;
     text-align: center;
 }
 
