@@ -1,0 +1,87 @@
+body
+{
+    font-family: 'Arvo', serif;
+    background-color: #336699;
+}
+
+h1
+{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+}
+
+.txt_span1
+{
+    visibility: hidden;
+    height: 500px;
+    width: 250px;
+    word-wrap: break-word;
+    overflow: auto;
+    margin-left: 50px;
+}
+
+.span1:hover + .txt_span1
+{
+    visibility: visible;
+}
+
+.span1:hover
+{
+    background-color: red;
+}
+
+.span1
+{
+    border-radius: 50%;
+    opacity: 0.65;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+
+    position: relative;
+    left: -100px;
+    top: 15px;
+}
+
+
+
+.txt_span2
+{
+    visibility: hidden;
+    height: 500px;
+    width: 250px;
+    word-wrap: break-word;
+    overflow: auto;
+    margin-left: 50px;
+}
+
+.span2:hover + .txt_span2
+{
+    visibility: visible;
+}
+
+.span2:hover
+{
+    background-color: red;
+}
+
+.span2
+{
+    border-radius: 50%;
+    opacity: 0.65;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+
+    position: relative;
+    left: -100px;
+    top: 15px;
+}
