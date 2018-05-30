@@ -17,4 +17,7 @@ body h1
 .img_personne
 {
     float: right;
+    max-width:  150px;
+    max-height: 150px;
+    padding-right: 25px;
 }
