@@ -1,0 +1,15 @@
+body
+{
+    background-color: rgb(66, 102, 138)
+}
+
+
+
+
+body h1
+{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
