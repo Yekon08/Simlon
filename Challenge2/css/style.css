@@ -12,25 +12,24 @@ h1
     margin-bottom: 30px;
 }
 
-main
-{
-    display: flex;
-    justify-content: center;
-}
-
 .txt_span1
 {
-    visibility: hidden;
+    display: none;
     height: 500px;
     width: 250px;
     word-wrap: break-word;
     overflow: auto;
     margin-left: 50px;
+    position: relative;
+    top: -500px;
+    right: -200px;
+
 }
+
 
 .span1:hover + .txt_span1
 {
-    visibility: visible;
+    display: block;
 }
 
 .span1:hover
@@ -42,30 +41,35 @@ main
 {
     border-radius: 50%;
     opacity: 0.65;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 88px;
     background-color: black;
 
     position: relative;
-    left: -100px;
-    top: 15px;
+    left: -123px;
+    display: inline-block;
+    top: -405px;
 }
 
 
 
 .txt_span2
 {
-    visibility: hidden;
+    display: none;
     height: 500px;
     width: 250px;
     word-wrap: break-word;
     overflow: auto;
     margin-left: 50px;
+    position: relative;
+    top: -500px;
+    right: -200px;
+
 }
 
 .span2:hover + .txt_span2
 {
-    visibility: visible;
+    display: block;
 }
 
 .span2:hover
@@ -82,6 +86,26 @@ main
     background-color: black;
 
     position: relative;
-    left: -100px;
-    top: 15px;
+    display: inline-block;
+    top: -355px;
+    left: -260px;
+}
+
+.test
+{
+    background-image: url("images/qjix.png");
+    background-attachment: fixed;
+}
+
+#test_img
+{
+    width: 750px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main
+{
+    max-height: 1500px;
 }
