@@ -13,3 +13,8 @@ body h1
     font-size: 2rem;
     margin-top: 1.5rem;
 }
+
+.img_personne
+{
+    float: right;
+}
