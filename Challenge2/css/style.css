@@ -86,62 +86,12 @@ h1
     position: absolute;
 }
 
-.txt_span1
+.txt_span1, .txt_span2, .txt_span3, .txt_span4, .txt_span5, .txt_span6
 {
     display: none;
 }
 
-.span1:hover + .txt_span1
-{
-    display: block;
-}
-
-.txt_span2
-{
-    display: none;
-}
-
-.span2:hover + .txt_span2
-{
-    display: block;
-}
-
-.txt_span3
-{
-    display: none;
-}
-
-.span3:hover + .txt_span3
-{
-    display: block;
-}
-
-.txt_span4
-{
-    display: none;
-}
-
-.span4:hover + .txt_span4
-{
-    display: block;
-}
-
-.txt_span5
-{
-    display: none;
-}
-
-.span5:hover + .txt_span5
-{
-    display: block;
-}
-
-.txt_span6
-{
-    display: none;
-}
-
-.span6:hover + .txt_span6
+.span1:hover + .txt_span1, .span2:hover + .txt_span2, .span3:hover + .txt_span3, .span4:hover + .txt_span4, .span5:hover + .txt_span5, .span6:hover + .txt_span6
 {
     display: block;
 }
