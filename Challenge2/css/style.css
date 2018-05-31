@@ -56,3 +56,91 @@ h1
     margin-top: 175px;
     margin-left: 100px;
 }
+
+.span4
+{
+    margin-left: 75px;
+    margin-top: 285px;
+}
+
+.span5
+{
+    margin-top: 350px;
+    margin-left: 20px;
+}
+
+.span6
+{
+    margin-top: 415px;
+    margin-left: 65px;
+}
+
+.txt
+{
+    overflow: auto;
+    word-wrap: break-word;
+    width: 250px;
+    height: 500px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.txt_span1
+{
+    display: none;
+}
+
+.span1:hover + .txt_span1
+{
+    display: block;
+}
+
+.txt_span2
+{
+    display: none;
+}
+
+.span2:hover + .txt_span2
+{
+    display: block;
+}
+
+.txt_span3
+{
+    display: none;
+}
+
+.span3:hover + .txt_span3
+{
+    display: block;
+}
+
+.txt_span4
+{
+    display: none;
+}
+
+.span4:hover + .txt_span4
+{
+    display: block;
+}
+
+.txt_span5
+{
+    display: none;
+}
+
+.span5:hover + .txt_span5
+{
+    display: block;
+}
+
+.txt_span6
+{
+    display: none;
+}
+
+.span6:hover + .txt_span6
+{
+    display: block;
+}
