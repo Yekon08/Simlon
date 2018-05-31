@@ -17,7 +17,8 @@ h1
     background-image: url(../images/qijx.png);
     height: 500px;
     width: 140px;
-    margin-left: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .invisible
@@ -143,4 +144,9 @@ h1
 .span6:hover + .txt_span6
 {
     display: block;
+}
+
+#test_reso
+{
+    margin-left: -150px;
 }
