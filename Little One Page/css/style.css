@@ -142,6 +142,11 @@ body
     width: 480px;
 }
 
+.fake
+{
+    border: 1px solid gray;
+}
+
 footer
 {
     background-color: #2B5DC3;
