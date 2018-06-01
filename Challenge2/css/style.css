@@ -11,7 +11,7 @@ h1
     padding-top: 20px;
     margin-bottom: 30px;
 }
-
+/* centrage du corps plus fond */
 #corps
 {
     background-image: url(../images/qijx.png);
@@ -20,12 +20,7 @@ h1
     margin-left: auto;
     margin-right: auto;
 }
-
-.invisible
-{
-    display: none;
-}
-
+/* définition des cercles */
 .cercle
 {
     position: absolute;
@@ -40,7 +35,7 @@ h1
 {
     background-color: red;
 }
-
+/*placement des cercles un par un */
 .span1
 {
     margin-top: 85px;
@@ -75,7 +70,7 @@ h1
     margin-top: 415px;
     margin-left: 65px;
 }
-
+/* position de mes textes */
 .txt
 {
     overflow: auto;
@@ -85,7 +80,7 @@ h1
     margin-left: 150px;
     position: absolute;
 }
-
+/* invisible ou pas */
 .txt_span1, .txt_span2, .txt_span3, .txt_span4, .txt_span5, .txt_span6
 {
     display: none;
