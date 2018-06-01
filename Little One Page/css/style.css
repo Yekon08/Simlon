@@ -1,4 +1,73 @@
-p
+header
 {
-    color: red;
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/fond_header.jpg);
+    background-repeat: repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1
+{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+header h3
+{
+    font-size: 36px;
+    font-weight: normal;
+}
+
+nav ul
+{
+    list-style-type: none;
+    background-color: red;
+    height: 60px;
+    border-top: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav
+{
+    font-size: 22px;
+}
+
+nav li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover
+{
+    background-color: black;
+}
+
+nav li
+{
+    padding: 15px;
+    width: 125px;
+}
+
+.border_nav
+{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+body
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
