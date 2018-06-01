@@ -88,17 +88,52 @@ main
     text-align: left;
 }
 
+main img
+{
+    height: 150px;
+    width: 150px;
+}
+
 main h3
 {
     font-size: 3.6rem;
     font-weight: normal;
 }
 
-main p
+main p.lorem
 {
     margin-top: 30px;
     line-height: 20px;
     margin-bottom: 35px;
+}
+
+main p.dupond
+{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main p.directeur
+{
+    line-height: 20px;
+}
+
+#images
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img_position
+{
+    margin-right: 16px;
+    margin-top: 25px;
+}
+
+.img_position6
+{
+    margin-top: 25px;
 }
 
 footer
@@ -123,3 +158,9 @@ footer
 {
     display: inline;
 }
+
+.margin_top60
+{
+    margin-top: 50px;
+}
+
