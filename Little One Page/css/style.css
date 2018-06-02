@@ -75,7 +75,6 @@ nav li
 
 body
 {
-    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.6rem;
 }
@@ -218,12 +217,9 @@ textarea
 .envoyer
 {
     display: block;
-    margin-top: 30px;
+    margin: 30px auto 70px auto;
     width: 160px;
     height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 70px;
 
     border-radius: 20px 20px;
     border: 0px;
