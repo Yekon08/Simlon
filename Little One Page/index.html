@@ -114,19 +114,37 @@
         <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis elit id accumsan blandit. Maecenas semper viverra ligula auctor ultrices. Donec sed posuere est, sed bibendum libero. Proin aliquet non sem vitae maximus. Sed eget elit sagittis, facilisis sem at, hendrerit ligula. Vestibulum facilisis purus sit amet tempus rhoncus.</p>
             
 
-        <img src="images/overwatch.jpeg" id="img_480x380" alt="image" />
+
+    <div id="flex_form">
+        <img src="images/overwatch.jpeg" id="img_480x380" class="marge_droite" alt="image" />
 
 
         <form action="" method="POST">
             <p>
                 <fieldset class="fake">
-                    <i class="far fa-user"></i>
-                    <input name="firstname" type="text"> 
+                    <i class="far fa-user padding_20px"></i>
+                    <input name="firstname" type="text" placeholder="Full name" class="input_border"/>
+                </fieldset>
+
+                <fieldset class="fake margin_top15">
+                    <i class="far fa-envelope padding_20px"></i>
+                    <input name="mail" type="text" placeholder="Eg. exemple@email.com" class="input_border"/>
+                </fieldset>
+
+                <fieldset class="fake margin_top15">
+                    <i class="fas fa-mobile-alt padding_20px"></i>
+                    <input name="mail" type="text" placeholder="Eg. exemple@email.com" class="input_border"/>
+                </fieldset>
+
+
+                <fieldset class="fake_area margin_top15">
+                    <i class="far fa-comment padding_20px"></i>
+                    <textarea name="comments" id="comments" class="input_border"></textarea>
                 </fieldset>
 
             </p>
         </form>
-
+    </div>
     </div>
 
 
