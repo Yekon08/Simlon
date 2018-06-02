@@ -1,6 +1,7 @@
 html
 {
     font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header
@@ -212,4 +213,23 @@ textarea
     width: 388px;
     height: 140px;
     margin-top: 20px;
+}
+
+.envoyer
+{
+    display: block;
+    margin-top: 30px;
+    width: 160px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
+    border-radius: 20px 20px;
+    border: 0px;
+    background-color: #846add;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
