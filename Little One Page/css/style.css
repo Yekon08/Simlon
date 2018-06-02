@@ -205,3 +205,11 @@ footer
 {
     margin-top: 15px;
 }
+
+textarea
+{
+    position: absolute;
+    width: 388px;
+    height: 140px;
+    margin-top: 20px;
+}
