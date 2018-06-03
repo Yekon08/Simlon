@@ -1,7 +1,14 @@
 html
 {
+    /* font Trebuchet MS + size 10px = 1rem */
     font-size: 62.5%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
 }
 
 header
@@ -10,7 +17,7 @@ header
     height: 300px;
     background-image: url(../images/fond_header.jpg);
     background-repeat: repeat;
-
+    /* Flex pour aligner titre + baseline */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +36,7 @@ header h3
     font-size: 3.6rem;
     font-weight: normal;
 }
-
+    /* Nav bar  */
 nav ul
 {
     list-style-type: none;
@@ -73,12 +80,7 @@ nav li
     margin-right: 5px;
 }
 
-body
-{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.6rem;
-}
-
+    /* Div 980 px */
 .corps
 {
     width: 980px;
@@ -118,7 +120,7 @@ body
 {
     line-height: 20px;
 }
-
+    /* 10 images */
 #images
 {
     display: flex;
@@ -135,7 +137,7 @@ body
 {
     margin-top: 25px;
 }
-
+    /* form */
 #img_480x380
 {
     height: 380px;
@@ -168,6 +170,30 @@ body
     border: 0px;
 }
 
+textarea
+{
+    position: absolute;
+    width: 388px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.envoyer
+{
+    display: block;
+    margin: 30px auto 70px auto;
+    width: 160px;
+    height: 40px;
+
+    border-radius: 20px 20px;
+    border: 0px;
+    background-color: #846add;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+    /* footer */
 footer
 {
     background-color: #2B5DC3;
@@ -180,7 +206,7 @@ footer
     justify-content: center;
     align-items: center;
 }
-
+    /* autres classes */ 
 .marge_droite
 {
     margin-right: 50px;
@@ -204,28 +230,4 @@ footer
 .margin_top15
 {
     margin-top: 15px;
-}
-
-textarea
-{
-    position: absolute;
-    width: 388px;
-    height: 140px;
-    margin-top: 20px;
-}
-
-.envoyer
-{
-    display: block;
-    margin: 30px auto 70px auto;
-    width: 160px;
-    height: 40px;
-
-    border-radius: 20px 20px;
-    border: 0px;
-    background-color: #846add;
-    color: white;
-    font-size: 1.6rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
 }
