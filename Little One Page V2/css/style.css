@@ -50,6 +50,8 @@ nav ul
 
 nav
 {
+    position: sticky;
+    top: 0;
     font-size: 2.2rem;
     box-shadow: 1px 6px 8px black;
 }
