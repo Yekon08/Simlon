@@ -47,50 +47,44 @@ header h3
     font-size: 3.6rem;
     font-weight: normal;
 }
-    /* Nav bar  */
+/* Nav bar  */
 nav ul
 {
     list-style-type: none;
-    background-color: #f19500;
+    background-color: red;
     height: 60px;
     border-top: 1px solid black;
-
+    
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
+    
 nav
 {
     font-size: 2.2rem;
-    box-shadow: 1px 6px 10px white;
+    box-shadow: 1px 6px 8px black;
 }
-
+    
 nav li a
 {
+    display: block;
+    height: 60px;
+    padding: 14px 16px;
     text-decoration: none;
     color: white;
 }
-
+    
 nav li:hover
 {
     background-color: black;
 }
-
+    
 nav li
 {
-    padding: 15px;
-    width: 125px;
-}
-
-.border_nav
-{
+    height: 60px;
+    text-align: center;
     border-left: 2px solid white;
-    border-right: 2px solid white;
-    margin-left: 5px;
-    margin-right: 5px;
 }
-
     /* Div 980 px */
 .corps
 {
@@ -253,4 +247,9 @@ footer i:hover
 .margin_top15
 {
     margin-top: 15px;
+}
+
+.border_right
+{
+    border-right: 2px solid white;
 }
