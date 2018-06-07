@@ -54,7 +54,7 @@ nav
     box-shadow: 1px 6px 8px black;
 }
 
-nav li a
+nav a li
 {
     padding: 0 16px;
     text-decoration: none;
@@ -238,4 +238,9 @@ footer
 .border_right
 {
     border-right: 2px solid white;
+}
+
+.decoration_none
+{
+    text-decoration: none;
 }
