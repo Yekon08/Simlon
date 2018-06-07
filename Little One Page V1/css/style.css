@@ -244,3 +244,11 @@ footer
 {
     text-decoration: none;
 }
+
+@media screen and (max-width: 980px)
+{
+    .corps
+    {
+    width: 100%;
+    }
+}
