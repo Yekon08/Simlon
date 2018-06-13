@@ -54,11 +54,9 @@ nav
     box-shadow: 1px 6px 8px black;
 }
 
-nav li a
+nav a li
 {
-    display: block;
-    height: 60px;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
     color: white;
 }
@@ -70,8 +68,10 @@ nav li:hover
 
 nav li
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
-    text-align: center;
     border-left: 2px solid white;
 }
 
@@ -171,6 +171,8 @@ textarea
     width: 388px;
     height: 140px;
     margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
 }
 
 .envoyer
@@ -186,6 +188,8 @@ textarea
     color: white;
     font-size: 1.6rem;
     font-weight: bold;
+
+    box-shadow: 6px 6px 30px gray;
 }
 
 .envoyer:hover
@@ -234,4 +238,17 @@ footer
 .border_right
 {
     border-right: 2px solid white;
+}
+
+.decoration_none
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 980px)
+{
+    .corps
+    {
+    width: 100%;
+    }
 }
