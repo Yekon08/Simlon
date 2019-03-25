@@ -1,0 +1,89 @@
+nav
+{
+    height: 123px;
+    width: 100%;
+    background-color: transparent;
+    @extend %flex_center;
+    justify-content: space-between;
+    //transition: all 1.2s ease-in-out;
+
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    ul
+    {
+        @extend %flex_center;
+        height: 100%;
+    }
+
+    li
+    {
+        @extend %margin_li_nav;
+        transform: scale(1);
+        transition: .3s ease-in-out;
+
+        &:hover
+        {
+            transform: scale(1.2);
+        }
+    }
+
+    img
+    {
+        @extend %resp_img;
+    }
+
+    .nav1
+    {
+        margin-left: 2%;
+        visibility: hidden;
+    }
+
+    .nav2
+    {
+        margin-right: 4%;
+    }
+}
+
+.color_nav
+{
+    background-color: $primary_color;
+    //transition: all 0.4s ease-in;
+}
+
+.img_nav
+{
+    visibility: visible !important;
+}
+
+.container_burger
+{
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include ease_out;
+
+    display: none;
+}
+
+.burger_line
+{
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #333333;
+    @include ease_out;
+}
+
+
+.active
+{
+    color: #2A8487;
+}

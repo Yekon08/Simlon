@@ -1,0 +1,154 @@
+/* line 12, ../../sass/_settings.scss */
+.flex_center, .skin, .skin ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 34, ../../sass/_settings.scss */
+.margin_top30 {
+  margin-top: 30px;
+}
+
+/* line 39, ../../sass/_settings.scss */
+.margin_left2 {
+  margin-left: 2%;
+}
+
+/* line 44, ../../sass/_settings.scss */
+.padding_top15 {
+  padding-top: 15px;
+}
+
+/* line 49, ../../sass/_settings.scss */
+.flex {
+  display: flex;
+}
+
+/* line 54, ../../sass/_settings.scss */
+.float_left {
+  float: left;
+}
+
+/* line 59, ../../sass/_settings.scss */
+.float_right {
+  float: right;
+}
+
+/* line 3, ../../sass/histoire.scss */
+body {
+  font-family: 'Franklin Gothic', sans-serif;
+}
+
+/* line 8, ../../sass/histoire.scss */
+main {
+  height: 100%;
+}
+
+/* line 13, ../../sass/histoire.scss */
+.logo_mobile {
+  display: none;
+  margin: 3%;
+  height: 75px;
+}
+
+/* line 20, ../../sass/histoire.scss */
+.skin {
+  margin-top: 200px;
+  flex-direction: column;
+}
+/* line 26, ../../sass/histoire.scss */
+.skin img {
+  height: 200px;
+  margin-right: 80px;
+}
+/* line 32, ../../sass/histoire.scss */
+.skin img:last-child {
+  margin-right: 0;
+}
+/* line 37, ../../sass/histoire.scss */
+.skin div:nth-child(2) {
+  width: 328px;
+}
+/* line 42, ../../sass/histoire.scss */
+.skin ul {
+  justify-content: space-around;
+}
+/* line 47, ../../sass/histoire.scss */
+.skin ul li {
+  margin-right: 20px;
+}
+
+/* line 54, ../../sass/histoire.scss */
+.txt_history p {
+  font-size: 2rem;
+}
+
+/* line 59, ../../sass/histoire.scss */
+.txt_history {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto 0 auto;
+}
+
+/* line 67, ../../sass/histoire.scss */
+.partners {
+  font-size: 4.2rem;
+  margin-top: 130px;
+}
+/* line 72, ../../sass/histoire.scss */
+.partners h3 {
+  margin-left: 12%;
+}
+/* line 77, ../../sass/histoire.scss */
+.partners .logos_partners {
+  width: 100%;
+  height: 385px;
+  background-color: #2a8487;
+  margin-top: 150px;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 90, ../../sass/histoire.scss */
+  .txt_history {
+    width: 100%;
+    line-height: 1.7rem;
+  }
+  /* line 95, ../../sass/histoire.scss */
+  .txt_history p {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  /* line 102, ../../sass/histoire.scss */
+  .partners {
+    margin-top: 75px;
+  }
+  /* line 106, ../../sass/histoire.scss */
+  .partners h3 {
+    text-align: center;
+    margin-left: 0;
+    font-family: "bodoni";
+  }
+  /* line 113, ../../sass/histoire.scss */
+  .partners .logos_partners {
+    margin-top: 75px;
+  }
+
+  /* line 119, ../../sass/histoire.scss */
+  .logo_mobile {
+    display: block;
+  }
+
+  /* line 124, ../../sass/histoire.scss */
+  .skin {
+    margin-top: 50px;
+  }
+
+  /* line 129, ../../sass/histoire.scss */
+  .txt_history {
+    margin-top: 50px;
+  }
+}

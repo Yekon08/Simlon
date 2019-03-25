@@ -1,0 +1,103 @@
+$primary_color: #fbfbfb;
+$show_home_image: true;
+$home_image: url(../img/welcome.jpg);
+$background_opacity: 0.1;
+
+%resp_img
+{
+    max-width:100%;
+    height:auto !important;
+}
+
+%flex_center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%margin_li_nav
+{
+    margin-right: 40px;
+
+    &:last-child
+    {
+        margin-right: 0;
+    }
+}
+
+.flex_center
+{
+    @extend %flex_center;
+}
+
+.margin_top30
+{
+    margin-top: 30px;
+}
+
+.margin_left2
+{
+    margin-left: 2%;
+}
+
+.padding_top15
+{
+    padding-top: 15px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.float_left
+{
+    float: left;
+}
+
+.float_right
+{
+    float: right;
+}
+
+%margin_right100
+{
+    margin-right: 100px;
+}
+
+%txt_center
+{
+    text-align: center;
+}
+
+@mixin ease_out 
+{
+    transition: all 0.5s ease-out;
+}
+
+@mixin background
+{
+    @if $show_home_image
+    {
+        &#bg-img 
+        {
+            background: $home_image;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                
+            &::after
+            {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(white, $background_opacity);
+            }
+        }
+    }
+}

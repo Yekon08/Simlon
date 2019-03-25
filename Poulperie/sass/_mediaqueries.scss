@@ -1,0 +1,205 @@
+@media screen and (max-width: 1000px)
+{
+    .container_main
+    {
+        width: 100% !important;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .container_burger
+    {
+        display: block;
+    }
+
+    .desc
+    {
+        font-size: 50%;
+
+        h1
+        {
+            margin-left: 3%;
+        }
+
+        p
+        {
+            padding-left: 3%;
+        }
+    }
+
+    .infos_pratiques div:first-child
+    {
+        padding: 5px;
+    }
+    
+    header img
+    {
+        width: 300px;
+        height:auto !important;
+    }
+
+    .container_burger
+    {
+        display: block;
+
+        &.close
+        {
+            transform: rotate(180deg);
+
+            .burger_line
+            {
+                //line 1 - rotate
+                &:nth-child(1)
+                {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+
+                //line 2 - hide 
+                &:nth-child(2)
+                {
+                    opacity: 0;
+                }
+
+                //line 3 -rotate
+                &:nth-child(3)
+                {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                }
+                
+                background: #fefefe;
+            }
+        }
+    }
+
+    .nav1
+    {
+        display: none;
+    }
+
+    nav
+    {
+        transition: all 1.2s ease-in-out;
+    }
+
+    .color_nav
+    {
+        background-color: transparent;
+    }
+
+    nav ul
+    {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav ul li
+    {
+        margin-top: 5%;
+        margin-right: 0;
+        font-size: 3rem;
+
+        &:hover
+        {
+            transform: scale(1);
+        }
+    }
+
+    .nav_mobile
+    {
+        height: 100vh;
+        z-index: 2;
+        color: #fefefe;
+    }
+
+    .mouse
+    {
+        display: none;
+    }
+
+    main
+    {
+        .container_month_div
+        {
+            flex-direction: column;
+
+            .container_month
+            {
+                width: 100%;
+                margin-right: 0;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .infos_pratiques
+    {
+        flex-direction: column;
+        justify-content: center;
+
+        div:first-child
+        {
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
+
+        
+        div:last-child
+        {
+            max-width: 100%;
+            width: 100% !important;
+        }
+        iframe
+        {
+            display: none;
+        }
+
+        table
+        {
+            margin: auto;
+        }
+    }
+
+    footer
+    {
+        height: 500px;
+        flex-wrap: wrap;
+        transition: all 1s ease-in-out;
+
+        .icons
+        {
+            flex-direction: column;
+            margin-top: 80px;
+
+            p:first-child
+            {
+                display: none;
+            }
+
+            p
+            {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .flex
+            {
+                justify-content: center;
+            }
+        }
+
+        ul
+        {
+            padding: 0px 10px;
+
+            li
+            {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
