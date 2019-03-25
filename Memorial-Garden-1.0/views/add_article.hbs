@@ -1,0 +1,30 @@
+<h1>Form add articles</h1>
+
+<form method="POST" action="/articles/add">
+    <label for="title">Title:</label>
+    <input type="text" name="title">
+
+    <label for="author">Author:</label>
+    <input type="text" name="author">
+
+    <label for="body">Body:</label>
+    <input type="textarea" name="body">
+
+    <input type="submit" value="submit">
+
+</form>
+
+<style>
+    form
+    {
+        margin-top: 100px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input
+    {
+        width: 250px;
+    }
+</style>

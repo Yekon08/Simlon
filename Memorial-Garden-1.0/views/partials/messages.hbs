@@ -1,0 +1,17 @@
+{{#if messages.success }}
+    <div class="messages success">
+        {{messages.success}}
+    </div>
+{{/if}}
+
+{{#if messages.error }}
+    <div class="messages error">
+        {{messages.error}}
+    </div>
+{{/if}}
+
+{{#if errors}}
+    {{#each errors}}
+        <div class="messages error">{{msg}}</div>
+    {{/each}}
+{{/if}}

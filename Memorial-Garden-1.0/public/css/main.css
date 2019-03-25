@@ -1,0 +1,236 @@
+/*RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,tr,td,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{margin:0;padding:0;border:0;outline:0;font-size:100%}ol,ul{list-style:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{display:block}
+/*/RESET*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    /* Set 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+header
+{
+    width: 100%;
+    height: 550px;
+    text-transform: uppercase;
+    background: url('/img/maxbgheader.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1
+{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 7.5rem;
+    color: #fefefe;
+}
+
+nav
+{
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    background-color: #1F2934;
+
+    position: sticky;
+    top: 0;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+nav li
+{
+    padding-inline-start: 10px;
+}
+
+.container_circle
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.circle
+{
+    min-width: 300px;
+    min-height: 300px;
+    margin-right: 210px;
+
+    border-radius: 50%;
+    background: #fefefe;
+    box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.4);
+
+    position: relative;
+    top: -150px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle:last-child
+{
+    margin-right: 0;
+}
+
+.circle h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.6rem;
+    color: #fefefe;
+    margin-top: 200px;
+    text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+}
+
+.circle:nth-child(1)
+{
+    background: url('/img/icons/save-file.svg') no-repeat;
+}
+
+.circle:nth-child(2)
+{
+    background: url('/img/icons/cloud.svg');
+}
+
+.circle:nth-child(3)
+{
+    background: url('/img/icons/forest.svg');
+}
+
+.img
+{
+    width: 100%;
+    height: 500px;
+    background: rgba(57, 57, 57, 38%);
+    margin-top: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fefefe;
+    font-size: 7.5rem;
+}
+
+.img a
+{
+    font-size: 2rem;
+}
+
+.container_squares
+{
+    width: 1320px;
+    margin: 375px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_square:nth-child(1)
+{
+    margin-top: 0;
+}
+
+.container_square p
+{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.container_square
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 330px;
+}
+
+.square
+{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.container_square:nth-child(1) .square
+{
+    background: url('/img/enregistrer.jpg') no-repeat;
+    background-size: cover;
+}
+
+.container_square:nth-child(2) .square
+{
+    background: url('/img/stocker.jpg') no-repeat;
+    background-size: cover;
+}
+
+.container_square:nth-child(3) .square
+{
+    background: url('/img/herediter.jpg');
+    background-size: cover;
+}
+
+footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(112, 112, 112, 100%);
+    text-align: center;
+    color: #fefefe;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+/* Flash Messages */
+/* Provisoire */
+.messages
+{
+    z-index: 1000;
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    padding: 5px;
+}
+
+.success
+{
+    background-color: #79e47ed5;
+    color: #2cb633ad;
+}
+
+.error
+{
+    color: rgb(252, 115, 115);
+    background: rgb(243, 81, 81);
+}

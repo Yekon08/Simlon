@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        {{#if user}}
+            <li><a href="/users/logout">Logout</a></li>
+        {{else}} 
+            <li><a href="/users/register">Register</a></li>
+            <li><a href="/users/login">Log in</a></li>
+        {{/if}}
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/articles/add/">Add Article</a></li>
+    </ul>
+</nav>

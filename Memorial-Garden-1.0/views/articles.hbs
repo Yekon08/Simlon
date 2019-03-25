@@ -1,0 +1,22 @@
+<h1>All Articles</h1>
+<div class="articles">
+    {{#each articles}}
+        <a href="/articles/{{_id}}">{{title}}</a>
+    {{/each}} 
+</div>
+
+<style>
+    .articles
+    {
+        margin-top: 25px;
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles a
+    {
+        color: black;
+        margin-top: 7px;
+    }
+</style>
