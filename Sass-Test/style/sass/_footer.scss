@@ -1,0 +1,16 @@
+    @import '_var';
+    
+    /* footer */
+    footer
+    {
+        background-color: #2B5DC3;
+        height: 160px;
+        width: 100%;
+        color: $color_w;
+        border-top: 1px solid $color_b;
+    
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @extend %flex_center;
+    }

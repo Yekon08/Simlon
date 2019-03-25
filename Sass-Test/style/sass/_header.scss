@@ -1,0 +1,28 @@
+@import '_var';
+
+header
+{
+    width: 100%;
+    height: 300px;
+    background-image: url(../../images/fond_header.jpg);
+    background-repeat: repeat;
+    /* Flex pour aligner titre + baseline */
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend %flex_center;
+    flex-direction: column;
+}
+
+header h1
+{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+header h3
+{
+    font-size: 3.6rem;
+    font-weight: normal;
+}
