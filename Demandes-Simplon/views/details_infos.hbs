@@ -1,0 +1,18 @@
+<div class="detailframe">
+
+    <div class="innerframe">
+        <div class="ligne1">
+            <div class="ligneobj">{{form.objet}}</div>
+            <div class="lignedem">{{form.demandeur}}</div>
+        </div>
+        <div class="ligne2">{{form.categorie}}</div>
+        <div class="ligne3">{{form.details}}<div class="ligne4">
+            <div class="divbtn">
+                <form method="POST" action="delete.php">
+                    <input type="hidden" value="#Insérer id_demande ici#">
+                    <input type="submit" value="SUPPRIMER" class="btndel">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

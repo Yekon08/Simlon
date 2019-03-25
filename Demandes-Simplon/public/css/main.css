@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #253847;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    color: #E80041;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 35px;
+    margin-left: 140px;
+}
+
+nav a {
+    color: #E80041;
+    font-size: 35px;
+    margin-right: 140px;
+    text-decoration: none;
+}
+
+.containerFormIndex {
+    background-color: #eff1f3;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.containerFormIndex label {
+    display: flex;
+    color: #E80041;
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+
+.containerFormIndex input {
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 40px;
+    background: none;
+    border: 1px solid rgba(111, 111, 111, 0.521);
+}
+
+.containerFormIndex textarea {
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 400px;
+    background: none;
+    border: 1px solid rgba(111, 111, 111, 0.521);
+}
+
+.containerFormIndex h1 {
+    text-align: center;
+    color: #E80041;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btnGreen {
+    background-color: #0CCE68 !important;
+    color: #eff1f3;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    border: none !important;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btnGreen:active {
+    position: relative;
+    top: 1px;
+}
+
+.detailframe {
+    background-color: #EFF1F3;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+.innerframe {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ligne1 {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ligne2 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.ligne3 {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.ligne4 {
+    margin-bottom: 70px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.lignedem {
+    width: 20%;
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+.ligneobj {
+    width: 80%;
+    font-size: 1.1rem;
+}
+
+.btndel {
+    background-color: #E80041;
+    color: #EFF1F3;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btndel:active {
+    position: relative;
+    top: 1px;
+}
+
+.containerList
+{
+    margin: 40px 10% 0 10%;
+    width: 80%;
+    height: 75px;
+    background-color: #EFF1F3;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.containerList a
+{
+    color: #E80041;
+    padding: 10px;
+}
