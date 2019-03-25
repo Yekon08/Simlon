@@ -1,0 +1,28 @@
+body
+{
+    overflow-x: hidden;
+}
+
+.img_film
+{
+    width: 100%;
+    max-height: 550px;
+    box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+}
+
+.infos
+{
+    max-width: 60%;
+}
+
+h3
+{
+    margin-top: 30px;
+}
+
+.img_affiche
+{
+    width: 250px;
+    height: 350px;
+    box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+}
