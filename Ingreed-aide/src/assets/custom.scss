@@ -1,0 +1,13 @@
+@import '../../node_modules/bulma/sass/utilities/initial-variables';
+@import '../../node_modules/bulma/sass/utilities/functions';
+
+$primary: #e80041;
+$info: #35345b;
+$link: #e3e2d5;
+$light: #fbfbfb;
+
+$panel-block-hover-background-color: #e80041;
+
+$message-body-border-color: #e3e2d5; 
+
+@import '../../node_modules/bulma/bulma';
