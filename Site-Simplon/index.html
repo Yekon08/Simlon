@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simplon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+    
+    <div id="fullpage">
+        <div class="section">
+            <header>
+                <div class="video_header"
+                    data-vide-bg="video/Love Coding (Background video for website).mp4"
+                    data-vide-options="muted: true, autoplay: true">
+        
+                    <div class="container_logo_header">
+                        <img src="img/logo-couleur.png" class="logo_header animated lightSpeedIn" alt="logo_simplon">
+                        <p>deviens développeur web chez simplon.co ! :)</p>
+                    </div>
+                </div>
+            </header>
+            
+            <nav class="navbar">
+
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+
+                <div class="logo_container">
+                    Simpl
+                    <img src="img/logo-couleur.png" class="logo_nav resp_img animated pulse delay-5s" alt="logo Simplon">
+                    N.CO
+                </div>
+        
+                <ul class="menu animated zoomInRight">
+                    <a href="#"><li class="margin_right15 active_nav">Accueil</li></a>
+                    <a href="#"><li class="margin_right15">Apprendre</li></a>
+                    <a href="#"> <li class="margin_right15">Projet</li></a>
+                    <a href="#"><li class="margin_right15">Stagiaire</li></a>
+                    <a href="#"><li>Aider</li></a>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="section">
+            <main>
+                <div class="container1 border wow fadeIn" data-wow-duration="5s">
+                    <i class="far fa-user fa-2x wow bounce" data-wow-delay="1s"></i>
+                    <p class="margin_top35">vous souhaitez</p>
+                    <span class="margin_top20">Apprendre ?</span>
+                    <button class="btn_infos">Cliquez-ici</button>
+                </div>
+    
+                <div class="container2 border_bottom border_right border_top wow fadeIn" data-wow-duration="5s">
+                    <i class="far fa-file-code fa-2x wow bounce" data-wow-delay="2s"></i>
+                    <p class="margin_top35">vous souhaitez</p>
+                    <span class="margin_top20">Proposer un Projet ?</span>
+                    <button class="btn_infos">Cliquez-ici</button>
+                </div>
+    
+                <div class="container3 border_bottom border_right border_top wow fadeIn" data-wow-duration="5s">
+                    <i class="fas fa-glasses fa-2x wow bounce" data-wow-delay="3s"></i>
+                    <p class="margin_top35">vous souhaitez</p>
+                    <span class="margin_top20">Engager un Stagiaire ?</span>
+                    <button class="btn_infos">Cliquez-ici</button>
+                </div>
+    
+                <div class="container4 border_bottom border_right border_top wow fadeIn" data-wow-duration="5s">
+                    <i class="fas fa-hands-helping fa-2x wow bounce" data-wow-delay="4s"></i>
+                    <p class="margin_top35">vous souhaitez</p>
+                    <span class="margin_top20">Nous Aider ?</span>
+                    <button class="btn_infos">Cliquez-ici</button>
+                </div>
+            </main>
+        
+            <footer class="margin_top35 margin_bottom10">
+                <ul class="flex_jc">
+                    <li>Simplon 2018 </li>
+                    <li class="margin_left5">|</li>
+                    <li class="margin_left5"> All Right Reserved </li>
+                    <li class="margin_left5">|</li> 
+                    <li class="margin_left5"><a href="#"> Mentions Légales</a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('#fullpage').fullpage();
+        });
+    </script>
+    <!-- <script>
+        $(document).ready(function()
+        {
+            fullpage_api.setResponsive(true);
+        });
+    </script> -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        </script>
+        <script>
+        $(document).ready(function() 
+        { 
+        var window_width= $(window).width();
+        if(window_width < 700)
+        {
+            fullpage_api.setResponsive(true);
+        }
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

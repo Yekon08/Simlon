@@ -1,0 +1,7 @@
+Les couleurs sont :
+ 
+- Noir : #000000
+- Rouge-Rose : #E80041
+- Bleu Fonc� : #35345B
+- Blanc Cr�me : #F3F3F3
+- Beige Fonc� : #E3E2D5
