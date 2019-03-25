@@ -1,0 +1,113 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  max-height: 100%;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body
+{
+  background: url("../pict/HS_test4.jpg") no-repeat;
+  background-size: cover;
+}
+
+main 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img
+{
+  cursor:pointer;
+  max-width:100%;
+  height:auto !important;
+}
+
+td img 
+{
+  width: 115px !important;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#memorygamehs
+{
+  margin-top: 75px;
+}
+
+.clic
+{
+  background-image: url("../pict/HS_timer.png");
+  background-repeat: no-repeat;
+  width: 221px;
+  height: 56px;
+}
+
+.timer
+{
+  background-image: url("../pict/HS_clics.png");
+  background-repeat: no-repeat;
+  width: 221px;
+  height: 56px;
+}
+
+#flex_score
+{
+  display: flex;
+  margin-top: 10px;
+}
+
+#number
+{
+  margin-left: 260px;
+
+}
+
+#txt
+{
+  margin-left: -182px;
+}
+
+.skin /* apparence input transparent */
+{
+  position: absolute;
+  margin-top: 26px;
+  background: transparent;
+  border: 0px;
+  font-size: 2rem;
+  color: white;
+}
+
+  @media screen and (max-width: 600px)
+{
+    body
+    {
+        background-size: 100% 100%;
+    }
+
+    td img
+    {
+      width: 55px !important;
+    }
+}
+
+@media screen and (max-width: 1600px)
+{
+  body
+  {
+    background: url("../pict/HS_test4-mini.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  
+  td img
+  {
+    width: 80px !important;
+  }
+  
+}

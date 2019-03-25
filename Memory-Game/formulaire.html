@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+  <div class="container">
+    <form id="contact" action="" name="formulaire" onsubmit="return valider ()" method="post">
+      <h3>Well played</h3>
+      <input type="radio" name="genre" value="male"> Mr
+      <input type="radio" name="genre" value="female"> Mme
+      <fieldset>
+        <input placeholder="Nom" name="nom" type="text" tabindex="1" >
+      </fieldset>
+      <fieldset>
+        <input placeholder="Prenom" name="prenom" type="text" tabindex="1">
+      </fieldset>
+      <fieldset>
+        <input placeholder="E-mail" name="mail" type="email" tabindex="2" >
+      </fieldset>
+      <div class="stats">
+        <div class="time">
+          <p id="timeform">Time : </p>
+        </div>
+        <div class="click">
+          <p id="clickform">Clics :</p>
+        </div>
+      </div>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" >Submit</button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+<script src="js/formu.js">
+</script>
+<script src="js/script.js">
+
+</script>
+</html>

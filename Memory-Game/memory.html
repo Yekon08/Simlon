@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/progressively/dist/progressively.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/progressively/dist/progressively.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <main id="compteur" onclick="incrementValue()" value="Increment Value">
+      <!--img avec effet au chargement-->
+      <table id="memorygamehs">
+    <tr>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/> </td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    </tr>
+    <tr>
+      <td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+      <td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+      <td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+      <td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+      <td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    </tr>
+    <tr>
+      <td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    </tr>
+    <tr>
+      <td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    	<td><img class="progressive__img progressive--not-loaded" data-progressive="./pict/test_fond.gif" src="./pict/test_fond.gif"/></td>
+    </tr>
+  </table>
+
+  <!--clics // timer-->
+    <div id="flex_score">
+      <div class="clic">
+        <form>
+          <input type="text" id="number" class="skin" value="0"/>
+        </form>
+      </div>
+
+      <div class="timer">
+        <input type="text" id="txt" class="skin">
+      </div>
+    </div>
+    
+    </main>
+    <script> // effet des images au chargement
+        progressively.init()
+    </script>
+    <script src="js/script.js"></script>
+</html>
