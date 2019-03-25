@@ -1,0 +1,38 @@
+<%= form_with(model: signup, local: true) do |form| %>
+  <% if signup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(signup.errors.count, "error") %> prohibited this signup from being saved:</h2>
+
+      <ul>
+      <% signup.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_area :comments %>
+  </div>
+  <div class="g-recaptcha" data-sitekey="6LfOunQUAAAAANjPeHke_Q6TsKbJZTYmoXmADh6c"></div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<script src='https://www.google.com/recaptcha/api.js'></script>
