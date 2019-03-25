@@ -18,8 +18,6 @@
 
 <?php
 
-
-
 $msg=$_POST["prenom"]."\n";
 $msg.=$_POST["nom"]."\n";
 $msg.=$_POST["sexe"]."\n";
