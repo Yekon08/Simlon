@@ -1,0 +1,346 @@
+/*RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,tr,td,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{margin:0;padding:0;border:0;outline:0;font-size:100%}ol,ul{list-style:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{display:block}
+/*/RESET*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: #333333;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+}
+
+h1
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.menu_active
+{
+    /* font-weight: 600; */
+    color: #00A2ED;
+}
+
+.scale
+{
+    transform: scale(1);
+    transition: 2s ease-in-out;
+}
+
+.scale:hover
+{
+    transform: scale(1.25);
+    z-index: 999;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.resp_img
+{
+    max-width:100%;
+    height:auto !important;
+}
+
+.color_white
+{
+    color: white;
+}
+
+.margin_right5
+{
+    margin-right: 5px;
+}
+
+.margin_right10
+{
+    margin-right: 10px;
+}
+
+.margin_right15
+{
+    margin-right: 15px;
+}
+
+.margin_top0
+{
+    margin-top: inherit;
+}
+
+.margin_top20
+{
+    margin-top: 20px;
+}
+
+.margin_top35
+{
+    margin-top: 35px;
+}
+
+.margin_top50
+{
+    margin-top: 50px;
+}
+
+.margin_top75
+{
+    margin-top: 75px;
+}
+
+.margin_top100
+{
+    margin-top: 100px;
+}
+
+.margin_left5
+{
+    margin-left: 5px;
+}
+
+.margin_left10
+{
+    margin-left: 10px;
+}
+
+.margin_left35
+{
+    margin-left: 35px;
+}
+
+.margin_left50
+{
+    margin-left: 50px;
+}
+
+.margin_left75
+{
+    margin-left: 75px;
+}
+
+.margin_left100
+{
+    margin-left: 100px;
+}
+
+.margin_bottom10
+{
+    margin-bottom: 10px;
+}
+
+.margin_bottom50
+{
+    margin-bottom: 50px;
+}
+
+.margin_bottom75
+{
+    margin-bottom: 75px;
+}
+
+.margin_bottom100
+{
+    margin-bottom: 100px;
+}
+
+
+.margin0
+{
+    margin: 0;
+}
+
+.dp_none
+{
+    display: none;
+}
+
+.txt_center
+{
+    text-align: center;
+}
+
+.txt_left
+{
+    text-align: left;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.flex_jc
+{
+    display: flex;
+    justify-content: center;
+}
+
+.flex_center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_sa
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img_flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.border
+{
+    border: 1px solid white;
+}
+
+.border_bottom
+{
+    border-bottom: 1px solid white;
+}
+
+.border_top
+{
+    border-top: 1px solid white;
+}
+
+.border_left
+{
+    border-left: 1px solid white;
+}
+
+.border_right
+{
+    border-right: 1px solid white;
+}
+
+.padding5
+{
+    padding: 5px;
+
+}
+
+/* .fa-twitter
+{
+    color: #00A2ED;
+} */
+
+/* .fa-facebook-f 
+{
+    color: #365B94;
+} */
+
+/* .fa-instagram 
+{
+    color: red;
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text !important;
+} */
+
+.float_right
+{
+    float: right;
+}
+
+.float_left
+{
+    float: left;
+}
+
+.width600
+{
+    width: 600px;
+}
+
+.width100
+{
+    width: 100%;
+}
+
+.overflow_hidden
+{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/******************************/
+@media screen and (max-width: 1024px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+
+    .flex_sa
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .margin_top50
+    {
+        margin-top: 0;
+    } */
+
+    .margin_left100
+    {
+        margin-left: 0;
+    }
+
+    .margin_left35
+    {
+        margin-left: 0;
+    }
+
+    .margin_bottom100
+    {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 770px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+
+    .img_flex
+    {
+        flex-wrap: wrap;
+    }
+
+    .flex_center
+    {
+        flex-direction: column;
+    }
+}
