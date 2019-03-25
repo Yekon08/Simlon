@@ -1,0 +1,235 @@
+main {
+    padding: 50px 40px 50px 40px;
+    width: 980px;
+    margin: auto;
+    background: linear-gradient(-45deg, var(--saumon), var(--light-bleu));
+    -webkit-box-shadow: 0 0 30px 0 #6a6a6a;
+    box-shadow: 0 0 30px 0 #6a6a6a;
+}
+
+.menu {
+    display: flex;
+    min-height: 300px;
+}
+
+.photo-menu {
+    width: 35%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+section {
+    border-bottom: 5px dotted var(--rouge);
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/**************************
+            ODD
+**************************/
+.photo-menu .titre {
+    display: inline-block;
+    transform: translate(220px, 0px);
+}
+
+.titre .sub {
+    height: 2px;
+    background-color: var(--rouge);
+}
+
+.desc {
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    line-height: 1.4rem !important;
+}
+
+.desc .prix {
+    color: #fff;
+    font-size: 3rem;
+    background-color: var(--rouge);
+    border-radius: 100%;
+    height: 110px;
+    line-height: 110px;
+    width: 110px;
+    text-align: center;
+    transform: rotateZ(20deg);
+    order: -1;
+    -webkit-box-shadow: -3px 3px 0 0 #FFFFFF;
+    box-shadow: -3px 3px 0 0 #FFFFFF;
+}
+
+/**************************
+            EVEN
+**************************/
+section:nth-child(even) .menu {
+    flex-direction: row-reverse;
+}
+
+section:nth-child(even) .photo-menu .titre {
+    transform: translate(-180px, 0px);
+}
+
+section:nth-child(even) .desc {
+    justify-content: flex-start;
+}
+
+section:nth-child(even) .prix {
+    transform: rotateZ(-20deg);
+    -webkit-box-shadow: 3px 3px 0 0 #FFFFFF;
+    box-shadow: 3px 3px 0 0 #FFFFFF;
+}
+
+/****************
+    BOISSONS
+****************/
+
+.carousel {
+    max-height: 200px;
+}
+
+.carousel .carousel-item {
+    outline: none;
+    height: 170px;
+    width: 170px;
+}
+
+.carousel .carousel-item > img {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: auto;
+}
+
+/****************
+    IMG MENUS
+****************/
+
+#menu1 .photo-menu {
+    background-image: url('../img/menus/ramen.jpg');
+}
+
+#menu2 .photo-menu {
+    background-image: url('../img/menus/tonkatsu.jpg');
+}
+
+#menu3 .photo-menu {
+    background-image: url('../img/menus/yakisoba.jpg');
+}
+
+#menu4 .photo-menu {
+    background-image: url('../img/menus/bentou.jpg');
+}
+
+#menu5 .photo-menu {
+    background-image: url('../img/menus/sushi.jpg');
+}
+
+#menu6 .photo-menu {
+    background-image: url('../img/menus/wrap.jpg');
+    background-position-y: 35%;
+}
+
+/*****************************************
+                RESPONSIVE
+*****************************************/
+
+@media screen and (max-width: 980px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    h2 {
+        font-size: 3.2rem;
+        margin-top: 5%;
+    }
+
+    .menu {
+        min-height: 240px;
+    }
+
+    .photo-menu .titre {
+        transform: translateX(100px);
+    }
+
+    section:nth-child(even) .photo-menu .titre {
+        transform: translate(-120px, 0px);
+    }
+
+    .prix {
+        font-size: 2.5rem;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+    }
+
+    #menu6 .photo-menu {
+        background-position-y: 50%;
+    }
+
+    .carousel {
+        max-height: 170px;
+    }
+
+    .carousel .carousel-item {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    main {
+        padding: 0px;
+    }
+
+    section {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .menu, section:nth-child(even) .menu {
+        display: block;
+    }
+
+    .photo-menu {
+        min-height: 160px;
+        border-radius: 0px;
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .photo-menu .titre, section:nth-child(even) .photo-menu .titre {
+        transform: translate(0, 0);
+    }
+
+    .desc {
+        width: 100%;
+    }
+
+    section:nth-child(even) .desc {
+        justify-content: flex-end;
+    }
+
+    .prix, section:nth-child(even) .prix {
+        background-color: transparent;
+        color: var(--rouge);
+        transform: rotateZ(0deg);
+        font-size: 2.2rem;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        order: 1;
+    }
+}

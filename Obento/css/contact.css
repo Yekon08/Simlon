@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Jap Brush';
+    src: url(../font/JAPAB___.TTF);
+}
+
+:root {
+    --light-bleu: #E8D4CF;
+    --rouge: #FF5A2D;
+    --saumon: rgb(255, 190, 115);
+    --gris: #666;
+}
+
+body {
+    background: url('../img/fond-mini.png');
+    font-family: 'Raleway', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    color: var(--rouge);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Jap Brush', cursive;
+    text-shadow: -1px 1px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -3px 3px 0 #FFFFFF, -1px 0px 0 #FFFFFF;
+    margin-top: 80px;
+    font-size: 6rem;
+    margin-bottom: 45px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2rem;
+    color: var(--gris);
+}
+
+.bloc-text {
+    margin-top: 20px;
+}
+
+#corps {
+
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(-45deg, var(--saumon), var(--light-bleu));
+}
+
+.bloc-centre {
+    display: flex;
+}
+
+.bloc-gauche {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.bloc-items {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.bloc-items-icons {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bloc-items-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bloc-gauche p {
+    text-align: justify;
+    padding: 11px;
+}
+
+.bloc-gauche i {
+    font-size: 16px;
+    padding: 17px;
+    color: var(--gris);
+}
+
+.bloc-img img {
+    height: auto;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 4px 4px 8px rgb(243, 157, 86);
+}
+
+.bloc-droit {
+    width: 50%;
+
+}
+
+iframe {
+    height: 690px;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--rouge);
+    height: 160px;
+    width: 980px;
+
+    border-top: 1px dotted gray;
+    color: white;
+    font-size: 1rem;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer i {
+    margin-right: 25px;
+}
+
+footer i:hover {
+    color: var(--saumon);
+}
+
+footer a {
+    color: white;
+}
+
+.border_footer {
+    border-right: 1px dashed white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+.sociaux {
+    display: flex;
+    flex-direction: column;
+}
+
+.sociaux ul {
+    display: flex;
+    margin-top: 25px;
+}
+
+.margin_top10 {
+    margin-top: 10px;
+}
+
+footer li:hover {
+    color: var(--saumon);
+}
+
+.padding_top25 {
+    padding-top: 25px;
+}
+
+@media screen and (max-width: 979px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .bloc-centre {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bloc-droit, .bloc-gauche {
+        width: 100%;
+    }
+
+    .bloc-gauche {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .bloc-gauche i {
+        font-size: 16px;
+        margin-top: 51%;
+        padding: 6.5px;
+    }
+
+    .bloc-gauche p {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .bloc-items-icons {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        background: black;
+    }
+
+    footer {
+        width: 100% !important;
+    }
+
+    #corps {
+        width: 100% !important;
+    }
+
+    body {
+        width: 100% !important;
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    body {
+        width: 100% !important;
+
+    }
+
+    img {
+        max-width: 100%;
+        height: auto !important;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+        align-content: center !important;
+    }
+
+    .padding_top25 {
+        padding-top: 5px !important;
+    }
+
+    .margin_top10 {
+        margin-top: 3px !important;
+    }
+
+    #corps {
+        width: 100% !important;
+    }
+}

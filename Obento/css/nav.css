@@ -1,0 +1,24 @@
+nav {
+    background-color: var(--rouge);
+    width: 980px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul {
+    height: 45px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    height: 45px;
+}
+
+nav ul li ul {
+    position: absolute;
+}

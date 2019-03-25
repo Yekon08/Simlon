@@ -1,0 +1,270 @@
+
+@font-face {
+    font-family: 'Jap Brush';
+    src: url(../font/JAPAB___.TTF);
+}
+:root {
+    --light-bleu: #E8D4CF;
+    --rouge: #FF5A2D;
+    --saumon: rgb(255, 190, 115);
+    --gris: #666;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+  margin: 0;
+  font-family: 'Jap Brush', cursive;
+}
+
+.container {
+  max-width: 1008px;
+  margin: 0 auto;
+}
+
+nav {
+  background: linear-gradient(-45deg, var(--saumon), var(--light-bleu));
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.10)
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  display: block;
+  padding: .75em 1.75em;
+}
+
+nav li:hover {
+  background: #444;
+}
+
+nav li:hover a {
+  color: #fff;
+}
+
+/*menu-sub=======================*/
+.menu-sub {
+  position: absolute;
+  left: 0;
+
+  background: #444;
+  width: 100%;
+  display: none;
+  color: #fff;
+  padding: 1em;
+}
+nav li:hover .menu-sub {
+  display: block;
+}
+
+.menu-sub li {
+  display: block;
+}
+
+.menu-sub a {
+  padding: 0;
+  margin-bottom: .35em;
+}
+
+.menu-sub a:hover {
+  text-decoration: underline;
+}
+
+.menu-category {
+  margin: 2.5em 0 .5em;
+}
+
+.menu-category:first-of-type {
+  margin-top: 0;
+}
+
+.menu-col-1 {
+  float: left;
+}
+
+.menu-col-1 {
+  width: 45%;
+}
+
+.menu-col-1 li {
+  
+  height: 150px;
+  width: 150px; 
+  margin-bottom: 10px; 
+  background-repeat: no-repeat; 
+  background-size: 150px;
+  background-size: cover;
+}
+
+#menu1 {
+  background-image: url("../img/menus/menu1-min.jpg");
+}
+
+#menu2 {
+  background-image: url("../img/menus/menu2.jpg");
+}
+ #menu3 {
+  background-image: url("../img/menus/menu3.jpg");
+}
+/***************detail-plat-menu nav bar*******/
+.detail-plat {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  margin-left: 150px;
+  color: black;
+}
+/************reservation*********************/
+
+/************reservation*********************/
+
+.reservation{
+  left: 0;
+  background: #444;
+  width: 100%;
+  color: #fff;
+  padding-left: 20%;
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+
+}
+#contact-reservation {
+  display: inline-block;
+  width: 90%;
+  display: block;
+
+}
+#contact-reservation #submit{
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 15px;
+  font-family: 'Jap Brush', cursive;
+}
+
+.genre{
+  display: flex;
+}
+.form-reservation{
+   /* display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -ms-flex-align: center;
+    align-items: left;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+.form-radio{
+    margin-top: 16px;
+    margin-left: 25%;
+    justify-content: left;
+    width: 60%;
+    margin-bottom: 1px;
+}
+ #titre-genre{
+  position: absolute;
+  display: block;
+  width: 30%;
+  margin-left: 10%;
+  
+}
+#date-reservation,#nbr-personne,.form-reservation input{
+  width: 80%;
+  text-align: center; 
+  margin-left: 10%;
+  padding-top: 1.5%;
+}
+textarea{
+   width: 80%;
+
+}
+#date-reservation,#nbr-personne,label,textarea{
+  margin-left: 10%;
+}
+
+
+
+
+
+/*""""""""""""""""""""""""""""""""""""""*/
+.popup h2 {
+margin-top: 14px;
+color: #333;
+font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+position: absolute;
+top: 0;
+right: 15px;
+transition: all 0.2s;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: rgb(179, 17, 17);
+}
+.popup .close:hover {
+color: #06D85F;
+}
+.popup .content {
+  padding-top: 5px;
+width: 100%;
+max-height: 100%;
+overflow: auto;
+}
+/*=============================*/
+/*chargement de la du formulaire*/
+/*===============================*/
+.overlay:target:before {
+  display: none;
+}
+.overlay:before {
+content:"";
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: block;
+background: rgba(0, 0, 0, 0.6);
+position: fixed;
+z-index: 9;
+}
+.overlay .popup {
+background: #fff;
+border-radius: 5px;
+padding-left:3%; 
+width: 35%;
+height: auto;
+position: fixed;
+top: 25px;
+left: 30%;
+margin: 0 auto;
+z-index: 10;
+-webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+.overlay:target .popup {
+  top: -50%;
+  left: -100%;
+}
+/*""""""""""""""""""""""""""""""""""""""*/
+

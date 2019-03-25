@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charte graphique</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Jap Brush';
+            src: url(font/JAPAB___.TTF);
+        }
+
+        :root {
+            --light-bleu: #E8D4CF;
+            --rouge: #FF5A2D;
+            --saumon: rgb(255, 190, 115);
+            --gris: #666;
+        }
+
+        h1,h2,h3 {
+            color: var(--rouge);
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-family: 'Jap Brush', cursive;
+        }
+
+        p {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.2rem;
+            color: var(--gris);
+        }
+
+        #typo {
+            display: flex;
+            flex-flow: wrap;
+            padding: 50px 50px;
+        }
+
+        #typo div {
+            padding: 5px 10px;
+            width: 23%;
+        }
+
+        #couleurs {
+            padding: 10px 20px;
+            background-color: #fff;
+        }
+
+        button {
+            display: inline-block;
+            height: 40px;
+            width: 100px;
+            font-family: 'Jap Brush', cursive;
+            background-color: var(--rouge);
+            border-radius: 8px;
+            border: none;
+            color: white;
+        }
+
+        button:hover {
+            background-color: var(--saumon);
+        }
+
+        .carte {
+            padding: 30px 10px 10px 100px;
+            height: 200px;
+            margin-top: 40px;
+            border-radius: 10px;
+            background: linear-gradient(-45deg, var(--saumon), var(--light-bleu));
+        }
+
+        .prix {
+            font-size: 1.5rem;
+            color: var(--rouge);
+            font-weight: bold;
+        }
+
+        #logo {
+            background-image: url('img/logoscouuuurs.png');
+            height:80px;
+            width:200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section id="typo">
+        <div>
+            <h2 class="jap">Onigiri</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur praesentium non ea odit alias blanditiis eum nesciunt, qui quo quam debitis delectus, fuga inventore natus accusantium, nam beatae quisquam excepturi.</p>
+        </div>
+        
+    </section>
+
+    <section id="couleurs">
+        <h2 class="jap">Section</h2>
+        <button>Coucou</button>
+        <div class="carte">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum earum vel odio illo, exercitationem aut.</p>
+            <p class="prix">99 €</p>
+            <div id="logo"></div>
+        </div>
+    </section>
+</body>
+</html>
