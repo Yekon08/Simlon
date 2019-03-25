@@ -1,0 +1,19 @@
+<?php
+
+//   if ((!empty($_FILES["upload"])) && (!empty($_POST["tag"]))) {
+//     $image_url=$_FILES["upload"]["name"]; //adresse url avec ext .jpg//
+//     $image_name=substr($image_url, 0, -4);//nom de l'image sans extension//
+//     $tag=$_POST["tag"];
+//     $multitag=explode(" ", $tag);
+//   var_dump($multitag);
+//   foreach ($multitag as $value) {
+//           $dbtag=$value;
+//           $req=$db->prepare("SELECT tag(tag) VALUES(:tag)");
+//           var_dump($dbtag);
+//           $req->execute(array(
+//         "tag"=>$dbtag,
+//       ));
+//
+//   };
+// }
+?>

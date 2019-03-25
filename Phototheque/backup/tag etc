@@ -1,0 +1,180 @@
+<?php
+
+//   if ((!empty($_FILES["upload"])) && (!empty($_POST["tag"]))) {
+//     $image_url=$_FILES["upload"]["name"]; //adresse url avec ext .jpg//
+//     $image_name=substr($image_url, 0, -4);//nom de l'image sans extension//
+//     $tag=$_POST["tag"];
+//     $multitag=explode(" ", $tag);
+//   var_dump($multitag);
+//   foreach ($multitag as $value) {
+//           $dbtag=$value;
+//           $req=$db->prepare("SELECT tag(tag) VALUES(:tag)");
+//           var_dump($dbtag);
+//           $req->execute(array(
+//         "tag"=>$dbtag,
+//       ));
+//
+//   };
+// }
+?>
+
+<?php
+
+if ((!empty($_FILES["upload"])) && (!empty($_POST["tag"]))) {
+  $image_url=$_FILES["upload"]["name"]; //adresse url avec ext .jpg//
+  $image_name=substr($image_url, 0, -4);//nom de l'image sans extension//
+  $tag=$_POST["tag"];
+  $multitag=explode(" ", $tag);
+  var_dump($multitag);
+  foreach ($multitag as $value) {
+    $dbtag=$value;
+    $req=$db->prepare("SELECT tag(tag) VALUES(:tag)");
+    var_dump($dbtag);
+    $req->execute(array(
+      "tag"=>$dbtag,
+    ));
+
+    $verif=$db->prepare("SELECT * FROM tag WHERE tag=");
+
+  }
+
+};
+
+
+
+$req=$db->prepare("INSERT INTO image(image_url, image_name) VALUES(:image_url, :image_name)");
+$req->execute(array(
+  "image_url"=>$image_url,
+  "image_name"=>$image_name,
+
+));
+
+if (isset($_FILES["upload"])) {
+  $image_url=$_FILES["upload"]["name"];
+  $image_name=substr($image_url, 0, -4);
+  $req=$db->prepare("INSERT INTO image(image_url, image_name) VALUES(:image_url, :image_name)");
+  $req->execute(array(
+    "image_url"=>$image_url,
+    "image_name"=>$image_name,
+
+  ));
+};
+?>
+<?php
+
+if (isset($_POST["tag"])) {
+  $tag=$_POST["tag"];
+
+  $multitag=explode(" ", $tag);
+
+  foreach ($multitag as $value) {
+    $dbtag=$value;
+    $req=$db->prepare("INSERT INTO tag(tag) VALUES(:tag)");
+    var_dump($dbtag);
+    $req->execute(array(
+      "tag"=>$dbtag,
+    ));
+  }
+
+  $req=$db->prepare("INSERT INTO tag(tag) VALUES(:tag)");
+  $req->execute(array(
+    "tag"=>$tag,
+  ));
+};
+
+if (isset() {
+  $id_tag=$bdd->lastInsertId("tag");
+  $image_id=$bdd->lastInsertId("image_id");
+  $req=$db->prepare("INSERT INTO classer(id_tag, image_id) VALUES(:id_tag, :image_id)");
+  $req->execute(array(
+    "id_tag"=>$id_tag,
+    "image_id"=>$image_id,
+  ));
+}
+
+?>
+
+<?php
+// if(isset($_GET["q"])){}
+// include_once 'php/classConnecDB.php';
+// $database = new Connection();
+// $db = $database->openConnection();
+// $ani=explode(" ", $_GET["q"]);
+?>
+
+<?php
+
+
+
+
+$reqtag=$db->prepare("SELECT * FROM tag WHERE nom_tag=[$multitag]");
+$reqtag->execute();
+$reqtag->fetch((array(
+var_dump($reqtag);
+die();
+
+
+
+
+
+$reqimg=$db->prepare("INSERT INTO image(image_url, image_name) VALUES(:image_url, :image_name)");
+$reqimg->execute(array(
+
+"image_url"=>$image_url,
+"image_name"=>$image_name,
+
+));
+
+
+
+
+
+
+
+
+foreach ($multitag as $value) {
+  $dbtag=$value;
+  $req=$db->prepare("SELECT tag(tag) VALUES(:tag)");
+  var_dump($dbtag);
+  $req->execute(array(
+    "tag"=>$dbtag,
+  ));
+
+  $verif=$db->prepare("SELECT * FROM tag WHERE tag=");
+
+}
+
+};
+
+
+
+
+    foreach ($value as $tagdb ) {
+
+  $reqtag=$db->prepare("INSERT INTO tag(tag) VALUES(:tag)");
+  $reqtag->execute(array(
+
+    "tag"=>$tagdb,
+  ));
+
+
+};
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ?>

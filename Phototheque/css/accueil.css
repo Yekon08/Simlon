@@ -1,0 +1,514 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.margin_left5
+{
+  margin-left: 5px;
+}
+
+.margin_left8
+{
+  margin-left: 8px;
+}
+
+.margin_right5
+{
+  margin-right: 5px;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+body
+{
+  min-height: 100%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  position: relative;
+   background-image: linear-gradient(to left top, #ffffff, #c7c7c7, #929292, #606060, #333333);
+
+}
+
+
+main
+{
+  margin: auto;
+}
+
+.img_accueil
+{
+  border-radius: 5px;
+}
+
+.display_none
+{
+  display: none;
+}
+
+.bouton_head
+{
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  /* margin-top: -120px; */
+}
+
+.bouton_head button
+{
+
+  color: white;
+  background-color: transparent;
+  border: 0px;
+}
+
+.logo_header
+{
+  width: 450px;
+  max-width:100%;
+  height:auto !important;
+
+  margin-left: 50px;
+}
+
+#modal_connexion {
+  width: 300px;
+  margin-top: 8%;
+}
+
+.nav_pc
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+  max-width: 100%;
+
+  background-color: #333333;
+
+  position: sticky;
+  z-index: 15;
+  top: 0;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.nav_pc i
+{
+  color: white;
+  margin-right: 50px;
+}
+.nav_pc_div2
+{
+  max-width: 100%;
+  height: auto !important;
+
+  display: flex;
+  flex-wrap: nowrap;
+}
+.nav_pc .color_i
+{
+  color: #969696;
+}
+.nav_pc form button
+{
+  width: 40px;
+  height: 29px;
+  float: right;
+  background-color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.nav_pc .container_search button
+{
+  border-left: 1px solid #333333;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav_pc form
+{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav_pc form input
+{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  width: 300px;
+  cursor: pointer;
+}
+.container_search
+{
+  float: right;
+  border-radius: 5px;
+}
+footer
+{
+  font-size: 2rem;
+}
+.footer_pc
+{
+  background-color: #333333;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.footer_pc i
+{
+  color: white;
+  padding: 5px;
+  width: 22px;
+  text-align: center;
+}
+.rond_icone
+{
+  border: 1px white solid;
+  border-radius: 50%;
+}
+.contact_footer
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer a
+{
+  color: white;
+  text-decoration: none;
+}
+.footer_mobile
+{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  color: white;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px -8px 40px 0px rgba(0,0,0,0.75);
+}
+.copy_mentions li:first-child
+{
+  text-align: center;
+}
+.copy_mentions
+{
+  margin-right: 5%;
+}
+.icons
+{
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.icons i
+{
+  margin-left: 20px;
+  font-size: 3rem;
+}
+.fa-twitter {
+  color: #00A2ED;
+}
+.fa-facebook-f {
+  color: #365B94;
+}
+.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.box{
+  display: flex;
+  justify-content: center;
+}
+
+.container-fluid
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.boxshadow{
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75) !important;
+}
+.margin_img
+{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.margin_txt
+{
+  margin-top: 10px;
+  color: white;
+}
+.container-fluid img {
+  width: 400px;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+  margin-bottom: 15px;
+}
+.container-fluid img:hover {
+  transform: scale(1.07);
+}
+.hover_button:hover
+{
+  transform: scale(1.3);
+}
+.test_input
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: red;
+  z-index: 55;
+}
+.test_input2
+{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: red;
+  z-index: 55;
+}
+.hauteur-bot
+{
+  height: 80px;
+  width: 100%;
+}
+/* BTN SEND FILES */
+.formUploadFile
+{
+  display: flex;
+  margin-top: 38px;
+  margin-left: 38px;
+}
+.inputFilePc
+{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.labelUploadPc {
+  color: white;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #00cbdf 0%,#00b1e7 100%);
+  display: inline-block;
+}
+.br5x
+{
+  border-radius: 5px 5px 5px 5px;
+}
+.br50x
+{
+  border-radius: 5px 0px 0px 5px;
+}
+.textInputFile
+{
+  width: 300px;
+  /* height: 30px; */
+  line-height: 30px;
+  text-indent: 5px;
+  background-color: #333333;
+  border: none;
+  border-top: 2px solid #00cbdf;
+  border-bottom: 2px solid #00b1e7;
+  color : white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+.validerInputFile
+{
+  background-image: linear-gradient(to bottom, #00cbdf 0%,#00b1e7 100%);
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  /* comm */
+}
+
+@media screen and (max-width: 1250px)
+{
+  .logo_header
+  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  footer
+  {
+    font-size: 1.5rem;
+  }
+  body
+  {
+    font-size: 1.5rem;
+  }
+  .container-fluid
+  {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .uploadFormMobile{
+    display: flex;
+    width: 100%;
+    display:none;
+  }
+  .input_form
+  {
+    margin-bottom: 10px;
+    height: 30px;
+    border: 0;
+    width: 70%;
+    text-indent: 5px;
+  }
+  footer .footer_mobile
+  {
+    display: flex;
+  }
+  .display-block{
+    display: block;
+  }
+  .btn {
+    width: 100px;
+    height: 28px;
+    line-height: 20px;
+    text-align: center;
+    background: #09d4d1;
+    background-image: linear-gradient(to bottom, #09d4d1, #01b0e5);
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 0;
+  }
+  footer
+  {
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0px;
+    font-size: 1.4rem;
+  }
+  body
+  {
+    font-size: 1.25rem;
+    background: url(https://image.noelshack.com/fichiers/2018/30/2/1532443981-psd-fond-decran-accueil.jpg);
+    background-size: contain;
+  }
+  .container-fluid img
+  {
+    margin-bottom: 15px;
+  }
+
+  .container-fluid img:hover {
+    transform: scale(1.0);
+  }
+  nav a
+  {
+    color: inherit;
+    text-decoration: none;
+  }
+  .logo_header
+  {
+    margin-left: 35px;
+    max-width:100%;
+    height:auto !important;
+    text-align: center;
+  }
+  header
+  {
+    height: 50px;
+    left: 0px;
+    z-index: 15;
+  }
+  nav
+  {
+    position: absolute;
+    min-width: 100%;
+    height: 50px;
+    position: sticky;
+    top:-1px;
+    z-index: 18;
+    display: flex;
+    background-color: #333333;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 84px -10px rgba(0,0,0,0.75);
+  }
+  .barrederecherche{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    margin-top: 50px;
+  }
+  .recherchemobile{
+    width: 100%;
+    height: 50px;
+  }
+  .display-none{
+    display: none;
+  }
+  .display_none
+  {
+    display: flex;
+  }
+  .inputFile{
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    display: block;
+  }
+  .upup{
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+    position: absolute;
+  }
+  .nav_pc
+  {
+    display: none;
+  }
+  .footer_pc
+  {
+    display: none;
+  }
+}
+/* push */
