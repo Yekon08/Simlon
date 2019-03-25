@@ -1,8 +1,5 @@
 <?php
 
-
-	
-
 	$test ='prenom : '.$_POST['prenom'];
 	$test .='nom : ' .$_POST['nom'];
 	$test .='age : ' .$_POST['age'];
